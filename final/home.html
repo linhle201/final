@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pofolio</title>
+    <!--css-->
+    <link rel="stylesheet" href="styleport.css">
+    <link rel="stylesheet" href="mediaquiries.css">
+    <!--media buttons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--font style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="styleport">
+
+    <!--script style-->
+    <script src ="script.js"></script>
+
+</head>
+<body >
+    <header>
+        <div class ="header">
+            <a href="#" class="logo">Linh Le</a>
+            
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Porfolio</a>
+                <a href="#">Causes</a>
+                <a href="#">Contact</a>
+            </nav>
+            <nav id="hamburger-nav">
+            <div class="logo">Linh Le</div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#" onclick="toggleMenu()">Home</a></li>
+                <li> <a href="#" onclick="toggleMenu()">About</a></li>
+                <li><a href="#" onclick="toggleMenu()">Porfolio</a></li>
+                <li><a href="#" onclick="toggleMenu()">Causes</a></li>
+                <li> <a href="#" onclick="toggleMenu()">Contact</a></li>
+
+            </div>
+        </nav>
+    </header>
+    <section class = "home">
+        <div class ="homecontent">
+            <div class="profile">
+            <h3> Hello and welcome!</h3>
+            <h1> Linh Le</h1>
+            <p> I'm a first-year web programming student at NSCC - Technology Campus. <br> I'm deeply passionate about building for the web, crafting sleek, user-friendly interfaces. I'm driven by the endless possibilities and the chance to create innovative online experiences.  </p>
+            
+            <div class="media-sign">
+                <a href="https://www.facebook.com/bell.h.bom/" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/linh-thi-my-le-04a375165/" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/_amibelita._/" class="fa fa-instagram"></a>
+            </div>
+            
+            <a href="https://en.wikipedia.org/wiki/Nikola_Tesla"><button onclick="openBox()">More about me...</button></a>
+        </div>
+    </div>
+        <div class="homecontent">
+            <img src="a.jpg"> 
+        </div>
+    </section>
+
+
+  <!--section profile-->
+    <h2> About Me</h2>
+    <section class ="about" id="about">
+        <div class="about-img">
+            <img class="profileimg" src="b.jpg">
+        </div>
+        <div class="text">
+        <h4>Web Developer and UI/UX Designer</h4>
+        <p>I'm a fervent advocate for the marriage of technology and design. As a web developer, I find joy in constructing elegant digital solutions that seamlessly fuse functionality with aesthetics. Simultaneously, my passion for UI/UX design fuels my drive to craft interfaces that not only captivate but also intuitively guide users through enriching experiences. The endless possibilities in this realm inspire me to push boundaries and innovate with every project I undertake.</p>
+        <a href="https://en.wikipedia.org/wiki/Nikola_Tesla"><button onclick="openBox()">More about me</button></a>
+        </div>
+    </section>
+
+    <!-- experience-->
+    <!--wrap up start here-->
+    <section class="experience">
+    <h5> Portpolio</h5>
+    <main>
+        
+        <!--grid1-->
+        <article class ="item">
+            <!--experience 1-->
+                    <div class="title">
+                        <h6 class="title-heading-ex1">Project 1</h6>
+                        <p class="title-subheading-ex1">First website about my page.</p>
+                    </div>
+                    <div class="cta">
+                        <a href ="file:///C:/Users/lethi/Documents/web1000/about_lab/Index.html" class="cta-link">see more</a>
+                    </div>
+                    <div class = "image">
+                    <figure><img src="c.jpg" alt=""></figure>
+                </div>
+          </article>
+    
+        <!--grid2-->
+        <article class ="item">
+            <!--experience 2-->
+                    <div class="title">
+                        <h6 class="title-heading-ex2">Project 2</h6>
+                            <p class="title-subheading-ex2">Website for NikoTesla</p>
+                    </div>
+                    <div class="cta">
+                        <a href ="file:///C:/Users/lethi/Documents/web1000/Assignment2/Nikolatesla.html" class="cta-link">see more</a>
+                    </div>
+                    <div class = "image">
+                    <figure><img src="d.jpg" alt=""></figure>
+                </div>
+          </article>
+          <!--grid3-->
+        <article class ="item">
+            <!--experience 3-->
+                    <div class="title">
+                        <h6 class="title-heading-ex3">Project 3</h6>
+                        <p class="title-subheading-ex3">Cooking Website</p>
+                    </div>
+                    <div class="cta">
+                        <a href ="https://limbell120.wixsite.com/home/about-me" class="cta-link">see more</a>
+                    </div>
+                    <div class = "image">
+                    <figure><img src="e.jpg" alt=""></figure>
+                </div>
+          </article>
+
+            <!--grid4-->
+        <article class ="item">
+            <!--experience 4-->
+                    <div class="title">
+                        <h6 class="title-heading-ex4">Project 4</h6>
+                        <p class="title-subheading-ex4">Media Marketing and manage website for Banh Mi A&B restaurant.</p>
+                    </div>
+                    <div class="cta">
+                        <a href ="https://www.banhmianb.com/" class="cta-link">see more</a>
+                    </div>
+                    <div class = "image">
+                    <figure><img src="f.jpg" alt=""></figure>
+                </div>
+          </article>
+    
+    </main>
+    </section>
+
+    <section  class="Cause">
+        <h5> Causes </h5>
+        <p>Please don't scroll past this 1-minute read. I'm sorry to interrupt, but it's Tuesday, November 28, and time is running out for you to give in 2023. I ask you to reflect on the number of times you visited Wikipedia in the past year and whether you're able to give $3 to the Wikimedia Foundation. If everyone reading this right now gave just $3, we'd hit our goal in a couple of hours.
+
+            It is hard to know what to trust online these days. Wikipedia is different: not perfect, but also not here to make a profit or to push a particular perspective. It is written by everyone, together, because they want to help create a free repository of high-quality information.
+            
+            If Wikipedia has given you $3 worth of knowledge this year, please give back. There are no small contributions: every edit counts, every donation counts. Thank you</p>
+    </section>
+    <section>
+        <div class ="skillname">
+            <h5>Skills</h5>
+            <div class="skills">  <!-- create a div -->
+                <li>
+                    <p>HTML</p><span class="bar"><span class="html"></span></span> <!-- skill bar 1 -->
+                </li>
+            
+                <li>
+                    <p>CSS</p><span class="bar"><span class="css"></span></span><!-- skill bar 2 -->
+                </li>
+            
+                <li>
+                    <p>JavaScripts</p><span class="bar"><span class="javascript"></span></span><!-- skill bar 3 -->
+                </li>
+            
+                <li>
+                    <p>SQL</p><span class="bar"><span class="sql"></span></span><!-- skill bar 4 -->
+                </li>
+            </div>
+            
+           
+    <footer>
+        <p>
+            Contact:
+            Phone: 6472233139
+            <br>Email: lethimylinh.2001@gmail.com
+            <br><address>47 Deepwood Drive, Hammonds Plains, Nova Scotia B3L 1J5</address>
+        </p>
+        <hr>
+        <p> @ Copyright Linh Le All Rights Reserve | 2023</p>
+       </footer>         
+   
+</body>
+</html>

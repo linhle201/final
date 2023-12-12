@@ -1,0 +1,17 @@
+@media screen and (max-width: 1200px) {
+    #hamburger-nav{
+        display: none;
+    }
+    .hamburger-nav{
+        display: flex;
+    }
+}
+@media (max-width: 700px) {
+    .skills{
+        width: 80%;
+    }
+
+    .skills-bar .bar .progress-line{
+        width: 100%;
+    }
+}      

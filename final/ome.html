@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pofolio</title>
+    <!--css-->
+    <link rel="stylesheet" href="omestyle.css">
+    <link rel="stylesheet" href="mediaquiries.css">
+    <!--media buttons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--font style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="styleport">
+</head>
+<body>
+    <header>
+        <div class ="header">
+            <a href="#" class="logo">Linh Le</a>
+            
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Porfolio</a>
+                <a href="#">Causes</a>
+                <a href="#">Contact</a>
+            </nav>
+            <nav id="hamburger-nav">
+            <div class="logo">Linh Le</div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#" onclick="toggleMenu()">Home</a></li>
+                <li> <a href="#" onclick="toggleMenu()">About</a></li>
+                <li><a href="#" onclick="toggleMenu()">Porfolio</a></li>
+                <li><a href="#" onclick="toggleMenu()">Causes</a></li>
+                <li> <a href="#" onclick="toggleMenu()">Contact</a></li>
+
+            </div>
+        </nav>
+    </header>
+    <section class = "home">
+        <div class ="homecontent">
+            <div class="profile">
+            <h3> Welcome to My Portfolio</h3>
+            <h1> Linh Le</h1>
+            <p> I am a Web Programmer and UX/UI designer. <br> focusing on....  </p>
+            
+            <div class="media-sign">
+                <a href="https://www.facebook.com/bell.h.bom/" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/linh-thi-my-le-04a375165/" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/_amibelita._/" class="fa fa-instagram"></a>
+            </div>
+            
+            <a href="https://en.wikipedia.org/wiki/Nikola_Tesla"><button onclick="openBox()">More about me...</button></a>
+        </div>
+    </div>
+        <div class="homecontent">
+            <img src="309595564_8053454338057903_8904167244568771638_n.jpg"> 
+        </div>
+    </section>
+ <script src ="script.js"></script>
+</body>
+</html>

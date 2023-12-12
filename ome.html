@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styleport.css">
+    <!-- Media Buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        /* Style for the contact section */
+        .contact {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style for the contact info */
+        .contact-info {
+            flex: 1;
+            margin-right: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #3e014b;
+        }
+
+        /* Style for the contact form */
+        .contact-form {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        /* Style for headings */
+        h2 {
+            color: #3e014b;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        /* Style for labels */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-family: "Dancing Script";
+            color: #3e014b;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        /* Style for inputs and textarea */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #390139;
+            resize: none; /* Prevent resizing of textarea */
+        }
+
+        /* Style for submit button */
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4b024f;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        @media screen and (max-width: 768px) {
+            .contact {
+                flex-direction: column;
+            }
+
+            .contact-info,
+            .contact-form {
+                margin: 0;
+                width: 100%;
+            }
+
+            .contact-form {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="logo">Linh Le</div>
+            <ul class="nav-links">
+                <li><a href="file:///C:/Users/lethi/Documents/web1000/final/home.html#">Home</a></li>
+                <li><a href="file:///C:/Users/lethi/Documents/web1000/about_lab/Index.html">About</a></li>
+                <li><a href="file:///C:/Users/lethi/Documents/prog1700-logic/finalProject/prog1700--final-project-linhle201/index.html">Portfolio</a></li>
+                <li><a href="file:///C:/Users/lethi/Documents/web1000/final/cv.html#resume">Resume</a></li>
+                <li><a href="file:///C:/Users/lethi/Documents/web1000/final/ome.html#contact">Contact</a></li>
+              </ul>
+            <div class="burger">&#9776;</div>
+        </nav>
+    </header>
+     <!-- Script for Burger Menu Functionality -->
+     <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+    
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+    <section id="home" class = "home">
+        <div class ="homecontent">
+            <div class="profile">
+            <h3> Hello and welcome!</h3>
+            <h1> Linh Le</h1>
+            <p> I'm a first-year web programming student at NSCC - Technology Campus. <br> I'm deeply passionate about building for the web, crafting sleek, user-friendly interfaces. I'm driven by the endless possibilities and the chance to create innovative online experiences.  </p>
+            
+            <div class="media-sign">
+                <a href="https://www.facebook.com/bell.h.bom/" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/linh-thi-my-le-04a375165/" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/_amibelita._/" class="fa fa-instagram"></a>
+            </div>
+            
+            <a href="https://en.wikipedia.org/wiki/Nikola_Tesla"><button onclick="openBox()">More about me...</button></a>
+        </div>
+    </div>
+        <div class="homecontent">
+            <img src="a.jpg"> 
+        </div>
+    </section>
+
+<section id="contact" class="contact">
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>
+            Phone: 6472233139 <br><br>
+            Email: lethimylinh.2001@gmail.com <br><br>
+            Address: 47 Deepwood Drive, Hammonds Plains, Nova Scotia B3L 1J5
+        </p>
+    </div>
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+        <form action="submit_contact_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</section>
+</body> 
+</html>
